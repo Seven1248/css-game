@@ -1,0 +1,26 @@
+遊戲網址:https://flukeout.github.io/
+解答不只一種，不同的答案以逗號隔開
+1. * ,plate; 
+2. bento;
+3. #fancy;  //ID選擇器
+4. plate apple;  //選擇plate下的所有apple
+5. #fancy pickle //ID為fancy以下的所有pickle
+6. .small //class選擇器
+7. orange.small  //class為small的orange，注意中間不得有空白
+8. bento orange.small, bento > orange.small //4.與7.的組合應用
+9. plate, bento //選擇複數element
+10. * //選擇全部
+11. plate * //plate下的全部子元素
+12. plate + apple //選擇plate後的第一個apple
+13. bento ~ pickle //bento後面的所有pickle
+14. plate > apple //plate下的子物件(不管孫子)
+15. orange:first-child //父元素下的第一個子物件
+16. plate :only-child  //plate下的唯一子物件才會被選取
+17. *:last-child.small //文件內所有的最後一個子物件，*可以省略
+18. plate:nth-child(3) //第三個plate，此例子可省略plate
+19. bento:nth-child(2), bento:nth-last-child(3) //選擇倒數第三個bento
+20. apple:first-of-type, apple:nth-child(2) //題目要求前者，第一個apple
+21. plate:nth-of-type(2n) //選取偶數的plate，奇數則將2n改為odd
+22. plate:nth-of-type(2n + 3) //從第3個plate起，每2個選一個
+23. apple:only-of-type
+24. .small:last-of-type
