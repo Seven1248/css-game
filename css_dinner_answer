@@ -24,8 +24,8 @@
 22. plate:nth-of-type(2n + 3) //從第3個plate起，每2個選一個
 23. apple:only-of-type
 24. .small:last-of-type
-25. bento:empty
-26. apple:not(.small)
+25. bento:empty  //選擇此元素中沒有任何子元素的元素
+26. apple:not(.small)  //不包含class為small的apple
 27. [for]  //含有for屬性的element
 28. plate[for] 
 29. bento[for=Vitaly] //注意大小寫
