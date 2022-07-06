@@ -1,0 +1,86 @@
+遊戲網址:
+http://flexboxfroggy.com/#zh-tw
+
+前言:
+此遊戲主要訓練玩家使用以下效果進行排版，和六角的 Flex Pirate 相似，答案僅供參考
+
+justify-content:
+    flex-start: 元素和容器的左端對齊。
+    flex-end: 元素和容器的右端對齊。
+    center: 元素在容器裏居中。
+    space-between: 元素之間保持相等的距離。
+    space-around: 元素周圍保持相等的距離。
+
+align-items:
+    flex-start: 元素與容器的頂部對齊。
+    flex-end: 元素與容器的底部對齊。
+    center: 元素縱向居中。
+    baseline: 元素在容器的基線位置顯示。
+    stretch: 元素被拉伸以填滿整個容器。
+align-self:
+    可以個別調整子元素在交錯軸線的位置，屬性與 align-item 相同。假如我們已經在父元素上設定 align-item，但要其中一個內容物的位置需要調整成其他對齊方式，這時我們就可以針對該元素設定 align-self 來覆寫原本 align-item 的屬性。
+align-content:(行距)
+    flex-start: 多行都集中在頂部。
+    flex-end: 多行都集中在底部。
+    center: 多行居中。
+    space-between: 行與行之間保持相等距離。
+    space-around: 每行的周圍保持相等距離。
+    stretch: 每一行都被拉伸以填滿容器。
+
+flex-direction:
+    row: 元素擺放的方向和文字方向一致。
+    row-reverse: 元素擺放的方向和文字的方向相反。
+    column: 元素從上放到下。
+    column-reverse: 元素從下放到上。    
+flex-wrap:
+    nowrap: 所有的元素都在一行。
+    wrap: 元素自動換成多行。
+    wrap-reverse: 元素自動換成逆序的多行。
+
+flex-flow:
+    這個縮寫屬性接受flex-direction和flex-wrap兩個屬性的值，兩個值中間以空格隔開。
+
+order:(數字)
+规定了弹性容器中的可伸缩项目在布局时的顺序。元素按照 order 属性的值的增序进行布局。拥有相同 order 属性值的元素按照它们在源代码中出现的顺序进行布局。
+
+
+    
+
+
+解答:
+1.justify-content: flex-end;
+2.justify-content: center;
+3.justify-content: space-around;
+4.justify-content: space-between;
+5.align-items: flex-end;
+6.justify-content: center;
+  align-items: center;
+7.justify-content: space-around;
+  align-items: end;
+8.flex-direction: row-reverse;
+9.flex-direction: column;
+10.justify-content: start;
+   flex-direction: row-reverse;
+11.flex-direction: column;
+   justify-content: flex-end;
+12.justify-content: space-between;
+   flex-direction: column-reverse;
+13.align-items: end;
+   flex-direction: row-reverse;
+   justify-content: center;
+14.order: 1;
+15.order: -1;
+16.align-self: flex-end;
+17.order: 1;
+   align-self: flex-end;
+18.flex-wrap: wrap;
+19.flex-direction: column;
+   flex-wrap: wrap;
+20.flex-flow: column wrap ;
+21.align-content: flex-start;
+22.align-content: flex-end;
+23.flex-direction: column-reverse;
+   align-content: center;
+24.flex-flow: wrap-reverse column-reverse ; 
+   justify-content: center;
+   align-content: space-between;
