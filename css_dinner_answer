@@ -24,3 +24,11 @@
 22. plate:nth-of-type(2n + 3) //從第3個plate起，每2個選一個
 23. apple:only-of-type
 24. .small:last-of-type
+25. bento:empty
+26. apple:not(.small)
+27. [for]  //含有for屬性的element
+28. plate[for] 
+29. bento[for=Vitaly] //注意大小寫
+30. [for^=Sa] ,[for^='Sa']  //搜尋for為Sa開頭的element
+31. [for$=ato],[for$='ato'] //搜尋for為ato結尾的element
+32. [for*=obb] // //搜尋for包含obb的element
